@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicVibe — Всё о музыке</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🎸 MusicVibe</div>
+    <nav>
+      <button class="nav-btn" data-target="about">О нас</button>
+      <button class="nav-btn" data-target="news">Новости</button>
+      <button class="nav-btn" data-target="gallery">Галерея</button>
+      <button class="nav-btn" data-target="contact">Контакты</button>
+      <button id="theme-toggle">Сменить тему</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- О НАС -->
+    <section id="about" class="content active about-section">
+      <video autoplay muted loop class="bg-video">
+        <source src="https://videos.pexels.com/video-files/7130545/7130545-uhd_3840_2160_30fps.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+      <div class="about-content">
+        <h2>О нас</h2>
+        <p class="intro">
+          Мы — <span>MusicVibe</span>, сообщество музыкантов, продюсеров и слушателей.  
+          Здесь мы создаём музыку, делимся опытом и вдохновением.  
+          Для нас звук — это не просто волна. Это эмоция, жизнь, дыхание.
+        </p>
+        <blockquote>«Музыка говорит то, что невозможно сказать словами.»</blockquote>
+        <h3>Наша команда</h3>
+        <div class="team-grid">
+          <div class="member">
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" alt="Анна">
+            <h4>Анна</h4>
+            <p>Гитаристка, звукорежиссёр</p>
+          </div>
+          <div class="member">
+            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Мария">
+            <h4>Мария</h4>
+            <p>Вокалистка и автор песен</p>
+          </div>
+          <div class="member">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde" alt="Даниил">
+            <h4>Даниил</h4>
+            <p>Барабанщик и преподаватель</p>
+          </div>
+          <div class="member">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Екатерина">
+            <h4>Екатерина</h4>
+            <p>Пианистка, аранжировщик</p>
+          </div>
+        </div>
+        <p class="closing">
+          Мы верим, что каждый звук способен соединить сердца.  
+          Присоединяйся к нам — почувствуй ритм жизни.
+        </p>
+      </div>
+    </section>
+
+    <!-- НОВОСТИ -->
+    <section id="news" class="content">
+      <h2>Новости</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🎧 Новый альбом уже на подходе!</h3>
+          <p>Мы записали 8 треков в студии — релиз запланирован на ноябрь. Следите за обновлениями!</p>
+        </div>
+        <div class="card">
+          <h3>🎤 Открытый концерт</h3>
+          <p>В это воскресенье мы выступаем в городском парке. Приходи и почувствуй энергетику живого звука!</p>
+        </div>
+        <div class="card">
+          <h3>🥁 Онлайн мастер-класс</h3>
+          <p>Даниил проведет обучающий стрим по технике барабанщика. Смотрите и учитесь у профессионала!</p>
+        </div>
+        <div class="card">
+          <h3>🎹 Новые аранжировки</h3>
+          <p>Екатерина подготовила серию красивых фортепианных аранжировок для начинающих музыкантов.</p>
+        </div>
+        <div class="card">
+          <h3>🎙 Интервью с вокалисткой</h3>
+          <p>Мария рассказала о вдохновении, подходах к написанию песен и любимых музыкальных стилях.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ -->
+    <!-- ГАЛЕРЕЯ -->
+<section id="gallery" class="content gallery">
+
+  <h2>Отзывы клиентов</h2>
+  <div id="reviews">
+    <div class="review">Загрузка...</div>
+    <div class="review">Загрузка...</div>
+    <div class="review">Загрузка...</div>
+  </div>
+  <button id="reload-quotes">Обновить отзывы</button>
+
+  <h2>Галерея</h2>
+  <div id="images" style="display:flex; gap:10px; flex-wrap:wrap;"></div>
+
+</section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contact" class="content">
+      <h2>Контакты команды</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Анна</h3>
+          <p>Гитаристка, звукорежиссёр</p>
+          <p>Email: anna@musicvibe.com</p>
+          <p>Телефон: +7 999 111 22 33</p>
+        </div>
+        <div class="contact-card">
+          <h3>Мария</h3>
+          <p>Вокалистка и автор песен</p>
+          <p>Email: maria@musicvibe.com</p>
+          <p>Телефон: +7 999 444 55 66</p>
+        </div>
+        <div class="contact-card">
+          <h3>Даниил</h3>
+          <p>Барабанщик и преподаватель</p>
+          <p>Email: danil@musicvibe.com</p>
+          <p>Телефон: +7 999 777 88 99</p>
+        </div>
+        <div class="contact-card">
+          <h3>Екатерина</h3>
+          <p>Пианистка, аранжировщик</p>
+          <p>Email: ekaterina@musicvibe.com</p>
+          <p>Телефон: +7 999 333 44 55</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MusicVibe | Музыка объединяет нас</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
